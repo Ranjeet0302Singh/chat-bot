@@ -15,7 +15,9 @@ export default function BotMessage({ fetchMessage }) {
 
   return (
     <div className="message-container">
-      <div className="bot-message">{isLoading ? "..." : message}</div>
+      <div className="bot-message">
+        <img src="https://cdn1.vectorstock.com/i/1000x1000/16/60/chat-bot-icon-robot-virtual-assistant-vector-43541660.jpg" alt="" width={'20'}/>
+        {isLoading ? "..." : message}</div>
     </div>
   );
 }
