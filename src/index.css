@@ -1,8 +1,11 @@
+/* body{
+  background-color: black;} */
+
 .chatbot {
   font-family: monospace;
   border-radius: 10px;
   box-shadow: 0 12px 24px 0 rgba(0, 0, 0, 0.15);
-  background: #f5f8fb;
+  background: #3a3a3a;
   text-align: center;
   display: flex;
   /* align-items: center;
@@ -13,15 +16,21 @@
 }
 
 .header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   padding: 20px;
   text-align: center;
   color: rgb(255, 255, 255);
   max-height: 58px;
   font-size: 16px;
   font-weight: bold;
-  background-color: #002f50;
-}
+  background-color: black;
 
+}
+.header img{
+  width: 50px;
+}
 .messages {
   width: 100%;
   height:83vh;
@@ -40,12 +49,12 @@
   padding: 15px 20px;
   margin: 20px;
   border-radius: 20px 20px 20px 1px;
-  background: #00aaa5;
+  background: #e89d34;
   color: white;
   min-width: 40px;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: flex-start;
   gap: 1rem;
 }
 
@@ -53,12 +62,13 @@
   /* float: right; */
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: flex-end;
   padding: 15px 10px;
   margin: 20px;
   border-radius: 20px 20px 1px 20px;
-  background: #cccccc;
+  background: white;
   color: black;
+  gap: 1rem;
 }
 
 .input {
@@ -79,6 +89,7 @@
   outline: none;
   padding: 16px 52px 16px 10px;
   width: 100%;
+
 }
 
 .input > form > input:focus {
@@ -91,7 +102,7 @@
   border-bottom-right-radius: 10px;
   box-shadow: none;
   cursor: pointer;
-  fill: #4a4a4a;
+  fill: #dc860f;
   opacity: 1;
   outline: none;
   padding: 14px 16px 12px 16px;

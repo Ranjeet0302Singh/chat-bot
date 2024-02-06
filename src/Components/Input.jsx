@@ -20,7 +20,7 @@ export default function Input({ onSend }) {
           type="text"
           onChange={handleInputChange}
           value={text}
-          placeholder="Ask Your Query To Boon GPT"
+          placeholder="Ask Your Query To Rudram GPT"
         />
         <button>
           <svg
