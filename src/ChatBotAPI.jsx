@@ -8,33 +8,43 @@ const API = {
           resolve(<p>Welcome to RudramGPT!</p>);
         } else if (formattedMessage === "hello") {
           resolve(<p>Hello,Welcome to RudramGPT!</p>);
-        }  else if (formattedMessage === "rudram solutions" ||formattedMessage === "about rudram solutions" ) {
+        } else if (
+          formattedMessage === "rudram solutions" ||
+          formattedMessage === "about rudram solutions"
+        ) {
           resolve(
-            <div>
-              <p>
+            <div style={{ textAlign: "justify" }}>
+              <h4>
                 Transforming the landscape of data solutions into a reality.
-              </p>
-              <p style={{ textAlign: "justify" }}>
+              </h4>
+              <p >
                 Welcome to Rudram Data Solutions, a pioneer in data-driven
                 solutions that aims to serve users to streamline data-related
                 problems with the adoption of advanced technologies to fuel
-                their business to the next level. We are a fleet of highly
-                qualified and skilled data scientists working together with a
-                holistic approach towards transforming raw data into actionable
-                insights for your company. At Rudram, we understand the
-                importance of data as a resource for your business and are
-                dedicated to conserve your time, money, and effort.
+                their business to the next level.
+              </p>
+
+              <p>
+                We are a fleet of highly qualified and skilled data scientists
+                working together with a holistic approach towards transforming
+                raw data into actionable insights for your company.
+              </p>
+              <p>
+                At Rudram, we understand the importance of data as a resource
+                for your business and are dedicated to conserve your time,
+                money, and effort.
               </p>
             </div>
           );
         } else if (
-          formattedMessage === "what rudram solutions do?" ||  formattedMessage === "what rudram solutions do" ||
+          formattedMessage === "what rudram solutions do?" ||
+          formattedMessage === "what rudram solutions do" ||
           formattedMessage === "what are rudram solutions experties"
         ) {
           resolve(
             <div>
               <p>Rudram Solutions Expertise includes</p>
-              <ul style={{textAlign:"left"}}>
+              <ul style={{ textAlign: "left" }}>
                 <li>Data Science</li>
                 <li>Machine Learning </li>
                 <li>Data Analysis </li>
@@ -49,7 +59,7 @@ const API = {
           resolve(
             <div>
               <p>Rudram Solutions Services includes</p>
-              <ul style={{textAlign:"left"}}>
+              <ul style={{ textAlign: "left" }}>
                 <li>Data Collection</li>
                 <li>Process Automation using Machine Learning and AI</li>
                 <li>Custom Data Services </li>
@@ -63,7 +73,7 @@ const API = {
             </div>
           );
         } else {
-          resolve(<p> No Data Found  </p>);
+          resolve(<p> No Data Found </p>);
         }
       }, 2000);
     });
