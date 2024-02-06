@@ -6,7 +6,9 @@ const API = {
 
         if (formattedMessage === "hi") {
           resolve(<p>Welcome to RudramGPT!</p>);
-        } else if (formattedMessage === "rudram solutions" ||formattedMessage === "about rudram solutions" ) {
+        } else if (formattedMessage === "hello") {
+          resolve(<p>Hello,Welcome to RudramGPT!</p>);
+        }  else if (formattedMessage === "rudram solutions" ||formattedMessage === "about rudram solutions" ) {
           resolve(
             <div>
               <p>
